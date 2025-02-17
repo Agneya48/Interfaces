@@ -11,8 +11,10 @@ public class ShortLister {
         File selectedFile;
         String lineRec = "";
         ArrayList<String> textDocLines = new ArrayList<>();
-        ShortWordFilter filter = new ShortWordFilter(4); //defaults to accepting Strings of less than 5 chars, but parameter can be set to other values
-        SafeInputObj safeInput = new SafeInputObj(); //exists solely to enable filter at start of program run; wanted to compare outputs
+        ShortWordFilter filter = new ShortWordFilter(4);
+        //defaults to accepting Strings of less than 5 chars, but parameter can be set to other values
+        SafeInputObj safeInput = new SafeInputObj();
+        //exists solely to enable filter at start of program run; wanted to compare outputs
 
         System.out.println();
         boolean filterToggle = safeInput.getYNConfirm("Enable filter of longer words? [Y/N]");
